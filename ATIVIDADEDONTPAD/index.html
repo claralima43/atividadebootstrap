@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oásis de Verão</title>
+    <script src="script.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('CLARA/tsitp-header-1200x400.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+        }
+        .navbar {
+            background-color: #3199b900;
+            overflow: hidden;
+            text-align: right;
+        }
+        .navbar a {
+            float: none;
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            font-family: cursive;
+            padding: 14px 30px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .header {
+            background-color: none;
+            color: rgb(255, 255, 255);
+            padding: 150px 80px;
+            text-align: center;
+            font-family: cursive;
+        }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+            max-height: 1000px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 0%;
+        }
+        .carousel-control-prev {
+            left: 10px;
+        }
+        .carousel-control-next {
+            right: 10px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #FAF2EB;
+        }
+        .features .feature {
+            width: 30%;
+            text-align: center;
+            font-family: cursive;
+            color:#C68A43;
+            padding: 20px;
+            background-color: #FAF2EB;
+        }
+        .cta {
+            background-color: #FAF2EB;
+            color: #c68a43;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .cta button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color:#c68a43;
+            background-color: none;
+        }
+        .footer {
+            background-color: #FAF2EB;
+            padding: 20px;
+            text-align: center;
+            color: #C68A43;
+        }
+        .footer img {
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+        .footer .links {
+            margin: 20px 0;
+        }
+        .footer .links a {
+            display: block;
+            color: #C68A43;
+            text-decoration: none;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Início</a>
+    <a href="#nossascasas">Nossas Casas</a>
+    <a href="#contact">Contato</a>
+    <a href="#alugar">Alugar</a>
+    <a href="#login">Cadastre-se</a>
+</div>
+
+<div class="header">
+    <h1>Oásis de Verão</h1>
+    <h4>as melhores casas de praia você encontra aqui!</h4>
+    <link rel="shortcut icon" type="imagex/png" href="CLARA/Est.-2017.ico">
+</div>
+
+<div class="carousel-container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="CLARA/as melhores casas de praia da regiâo.jpg" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="CLARA/as melhores casas de praia da regiâo (1).jpg" alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="CLARA/as melhores casas de praia da regiâo (2).jpg" alt="Terceiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <img src="CLARA/screen-shot-2023-07-26-at-5-22-44-pm-64c18eb27228a.png" alt="Feature Image">
+        <p>O melhor lugar para aproveitar</p>
+    </div>
+    <div class="feature">
+        <img src="CLARA/sitp-s2-ut-201-221024-doseri-00488rc-3000-64ceb2c885f7b.jpg" alt="Feature Image">
+        <p>Passar com seu amor</p>
+    </div>
+    <div class="feature">
+        <img src="CLARA/sitp-s1-ut-105-211011-taypet-01053rc-1655414861.jpg" alt="Feature Image">
+        <p>E se divertir!</p>
+    </div>
+</div>
+
+<div class="cta">
+    <h2>Alugar Casa</h2>
+    <button>Entrar em Contato</button>
+    <button>Escolher Casa</button>
+</div>
+
+<div class="footer">
+    <img src="CLARA/Est. 2017.jpg" alt="Logo">
+    <div class="links">
+        <a href="#link1">Instagram</a>
+        <a href="#link2">WhatsApp</a>
+        <a href="#link3">Facebook</a>
+        <a href="#link4">Twitter</a>
+    </div>
+    <p>©oasisdeverao.com</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
